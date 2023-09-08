@@ -35,6 +35,14 @@ The provided XML layout file is designed for an Android app's main activity. It 
 - Each food item consists of an ImageView (`img_grilled_chicken`, `img_fried_chicken`, etc.) and text views (`tv_menu_grilled_chicken`, `tv_price_menu_1`, etc.).
 
 
+## Screenshots
+
+| Screenshot 1 | Screenshot 2 |
+| ------------ | ------------ |
+| ![App Screenshot](app/src/main/res/screenshot/Screenshot_20230908_225045.png) | ![App Screenshot](app/src/main/res/screenshot/Screenshot_20230908_225110.png) |
+
+
+
 ## Original Sources
 
 - [ic_shopping_cart](https://www.flaticon.com/free-icon/shopping-cart_2838838?term=shoping+cart&page=1&position=6&origin=search&related_id=2838838)
