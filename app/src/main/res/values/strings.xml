@@ -3,10 +3,18 @@
     <string name="tv_user_greeting">Hai, Binarian</string>
     <string name="tv_greeting">Mau Makan apa hari ini?</string>
     <string name="tv_info_discount">Diskon 30%</string>
-    <string name="tv_discount_desc">Pesan makanan melalui aplikasi dan dapatkan diskonmu</string>
+    <string name="tv_discount_desc">Pesan makanan melalui aplikasi dan dapatkan diskonmu!</string>
     <string name="tv_see_all">Lihat Semua</string>
     <string name="tv_category_rice">Nasi</string>
     <string name="tv_category_noodle">Mie</string>
     <string name="tv_category_snack">Snack</string>
     <string name="tv_category_drink">Minuman</string>
+    <string name="tv_menu_grilled_chicken">Ayam Bakar</string>
+    <string name="tv_menu_fried_chicken">Ayam Goreng</string>
+    <string name="tv_menu_geprek_chicken">Ayam Geprek</string>
+    <string name="tv_menu_chicken_satay">Sate Ayam</string>
+    <string name="tv_price_menu_1" translatable="false">Rp. 50.000</string>
+    <string name="tv_price_menu_2" translatable="false">Rp. 40.000</string>
+    <string name="tv_price_menu_3" translatable="false">RP. 40.000</string>
+    <string name="tv_price_menu_4" translatable="false">Rp. 25.000</string>
 </resources>

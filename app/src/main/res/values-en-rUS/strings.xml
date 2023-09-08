@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">homepage_food_delivery</string>
+    <string name="tv_user_greeting">Hello, Binarian</string>
+    <string name="tv_greeting">What would you like to eat today?</string>
+    <string name="tv_info_discount">Discount 30%</string>
+    <string name="tv_discount_desc">Order food through the app and get your discount!</string>
+    <string name="tv_see_all">See All</string>
+    <string name="tv_category_rice">Rice</string>
+    <string name="tv_category_noodle">Noodle</string>
+    <string name="tv_category_snack">Snack</string>
+    <string name="tv_category_drink">Drink</string>
+    <string name="tv_menu_grilled_chicken">Grilled Chicken</string>
+    <string name="tv_menu_fried_chicken">Fried Chicken</string>
+    <string name="tv_menu_geprek_chicken">Geprek Chicken</string>
+    <string name="tv_menu_chicken_satay">Chicken Satay</string>
+</resources>

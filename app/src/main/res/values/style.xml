@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="radiusImageView">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
-    </style>
-
     <style name="Subhead2" parent="android:TextAppearance">
         <item name="android:textColor">@color/licorice</item>
         <item name="android:textSize">14sp</item>
