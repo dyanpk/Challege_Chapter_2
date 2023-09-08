@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">homepage_food_delivery</string>
+    <string name="tv_user_greeting">Hai, Binarian</string>
+    <string name="tv_greeting">Mau Makan apa hari ini?</string>
 </resources>
