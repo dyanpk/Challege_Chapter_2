@@ -17,4 +17,6 @@
     <string name="tv_price_menu_2" translatable="false">Rp. 40.000</string>
     <string name="tv_price_menu_3" translatable="false">RP. 40.000</string>
     <string name="tv_price_menu_4" translatable="false">Rp. 25.000</string>
+    <string name="tv_list_foods">List Menu Makanan</string>
+    <string name="tv_category">Kategori</string>
 </resources>

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/almond">
+    android:background="@color/almond"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -53,9 +52,9 @@
                 android:layout_marginHorizontal="25dp"
                 android:layout_marginVertical="30dp"
                 android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:layout_width="21dp"
@@ -104,18 +103,18 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintBottom_toBottomOf="parent">
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
                         android:id="@+id/iv_discount_30"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/img_discount_30"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/ll_banner_discount"
-                        android:src="@drawable/img_discount_30"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:ignore="ContentDescription" />
 
                     <LinearLayout
@@ -162,20 +161,37 @@
             android:id="@+id/cl_list_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cv_banner">
 
-            <TextView
-                android:id="@+id/tv_see_all"
+            <LinearLayout
+                android:id="@+id/ll_category"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="@string/tv_see_all"
-                style="@style/Subhead3"
-                android:gravity="end"
-                android:alpha="0.5" />
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/cl_list_category">
+
+                <TextView
+                    style="@style/H4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv_category" />
+
+                <TextView
+                    style="@style/Subhead3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:text="@string/tv_see_all" />
+            </LinearLayout>
 
             <androidx.constraintlayout.helper.widget.Flow
                 android:id="@+id/flow_list_category"
@@ -187,7 +203,7 @@
                 app:flow_wrapMode="aligned"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_see_all" />
+                app:layout_constraintTop_toBottomOf="@id/ll_category" />
 
             <LinearLayout
                 android:id="@+id/ll_category_rice"
@@ -205,10 +221,10 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_category_rice"
-                    style="@style/Subhead2"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -228,10 +244,10 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_category_noodle"
-                    style="@style/Subhead2"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -251,10 +267,10 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_category_snack"
-                    style="@style/Subhead2"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -274,10 +290,10 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/tv_category_drink"
-                    style="@style/Subhead2"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -302,11 +318,11 @@
 
                 <TextView
                     android:id="@+id/tv_menu_list"
-                    style="@style/H2"
+                    style="@style/H3"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="List Menu Makanan" />
+                    android:text="@string/tv_list_foods" />
 
                 <ImageView
                     android:layout_width="25dp"
@@ -352,10 +368,10 @@
                     android:text="@string/tv_menu_grilled_chicken" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_price_menu_1"
-                    style="@style/Subhead2"/>
+                    android:text="@string/tv_price_menu_1" />
 
             </LinearLayout>
 
@@ -373,16 +389,16 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/H6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_menu_fried_chicken"
-                    style="@style/H6" />
+                    android:text="@string/tv_menu_fried_chicken" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_price_menu_2"
-                    style="@style/Subhead2"/>
+                    android:text="@string/tv_price_menu_2" />
 
             </LinearLayout>
 
@@ -400,16 +416,16 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/H6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_menu_geprek_chicken"
-                    style="@style/H6" />
+                    android:text="@string/tv_menu_geprek_chicken" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_price_menu_3"
-                    style="@style/Subhead2" />
+                    android:text="@string/tv_price_menu_3" />
 
             </LinearLayout>
 
@@ -427,16 +443,16 @@
                     tools:ignore="ContentDescription" />
 
                 <TextView
+                    style="@style/H6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_menu_chicken_satay"
-                    style="@style/H6" />
+                    android:text="@string/tv_menu_chicken_satay" />
 
                 <TextView
+                    style="@style/Subhead2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/tv_price_menu_4"
-                    style="@style/Subhead2" />
+                    android:text="@string/tv_price_menu_4" />
 
             </LinearLayout>
 

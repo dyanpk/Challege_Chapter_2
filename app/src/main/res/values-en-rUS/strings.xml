@@ -14,4 +14,6 @@
     <string name="tv_menu_fried_chicken">Fried Chicken</string>
     <string name="tv_menu_geprek_chicken">Geprek Chicken</string>
     <string name="tv_menu_chicken_satay">Chicken Satay</string>
+    <string name="tv_list_foods">Explore Our Food Selection</string>
+    <string name="tv_category">Category</string>
 </resources>
