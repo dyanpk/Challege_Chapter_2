@@ -2,4 +2,6 @@
     <string name="app_name">homepage_food_delivery</string>
     <string name="tv_user_greeting">Hai, Binarian</string>
     <string name="tv_greeting">Mau Makan apa hari ini?</string>
+    <string name="tv_info_discount">Diskon 30%</string>
+    <string name="tv_discount_desc">Pesan makanan melalui aplikasi dan dapatkan diskonmu</string>
 </resources>
