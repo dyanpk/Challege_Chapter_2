@@ -30,6 +30,7 @@
     <style name="H4" parent="android:TextAppearance">
         <item name="android:textColor">@color/licorice</item>
         <item name="android:textSize">16sp</item>
+        st
         <item name="fontFamily">@font/poppins_semibold</item>
     </style>
     <style name="H6" parent="android:TextAppearance">
